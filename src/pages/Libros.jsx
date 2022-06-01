@@ -1,7 +1,7 @@
+import './css/libros.css'
 import { Table } from "react-bootstrap"
 import { useEffect, useState } from "react"
 import Menu from "../components/Menu"
-import './css/libros.css'
 
 export default function Libros(props){
      
@@ -39,7 +39,7 @@ export default function Libros(props){
                 </td>
             </tr>
         );
-    })   
+    })
 
     return(
         <div>
@@ -50,7 +50,7 @@ export default function Libros(props){
                 responsive
                 >
                 <thead>
-                    <tr>
+                    <tr class="headers-table">
                         <th>
                             ID
                         </th>
@@ -67,7 +67,7 @@ export default function Libros(props){
                             Area
                         </th>
                     </tr>
-                    <tr class="test">
+                    <tr>
                         <td>Libro1</td>
                         <td>Libro2</td>
                         <td>Libro3</td>

@@ -52,7 +52,7 @@ export default function Prestamos() {
                 <table className="table table-bordered">
                     <tbody>
                         <tr>
-                            <th>Total Multas</th>
+                            <th>Total Multas HOLA TEST MANOLO</th>
                             <td className="col-md-2">
                                 {
                                     statePrestamos.map(item => item.multa).reduce((prev, curr) => prev + curr, 0)
