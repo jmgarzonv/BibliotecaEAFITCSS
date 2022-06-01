@@ -49,13 +49,13 @@ export default function InicioSesion() {
                 <div>
                     <input type='text' name='name' placeholder='Nombre' onChange={handleInputChangeName} defaultValue='Luis'></input>
                 </div>
-                <div>
+                <div class="adjust-style">
                     <input type='text' id='contraseña' name='contraseña' placeholder='Documento de identidad' onChange={handleInputChangeCi} defaultValue='CC-156'></input>
                 </div>
+                <Link to='#' className='recover-password'><span>Recuperar contraseña</span></Link>
                 <button className='btn_ingresar' type='submit' onClick={credentialsValidation}>{<Link to={'/prestamos'} state={{username:name, id_lector:student[[0].id_lector]}} >Enviar</Link>}</button>
                 <div className='down'>
-                    <NavLink to='/registrarse' className='go_registrarse'><span>¿No tienes cuenta? Registrate</span></NavLink>
-                    <Link to='#' className=''><span>Recuperar contraseña</span></Link>
+                    <p>¿No tienes cuenta? <NavLink to='/registrarse' className='go_registrarse'><span> Registrate</span></NavLink></p>
                 </div>
             </form>
 
