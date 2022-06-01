@@ -64,8 +64,18 @@ body {
 	transition: .3s ease all;
 }
 
+.btn_ingresar[type="submit"] a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
 .btn_ingresar[type="submit"]:hover {
 	background: #0051ff;
+	color: #ffffff;
+}
+
+.btn_ingresar[type="submit"]:hover a{
+	color: #ffffff;
 }
 
 .down a{

@@ -4,9 +4,9 @@ body{
 
 .table {
     padding: 0px 14px !important;
-    width: 88% !important;
+    width: 100% !important;
     margin: auto;
-    margin-top: 42px;
+    max-width: 1600px;
 }
 
 .headers-table{
@@ -28,13 +28,16 @@ body{
 
 .table tr td{
     border: 1px solid #cdd5dc;
-    color: #006fbf;
+    color: #000000;
     transition: all 0.5s ease-in-out;
 }
 
+.table tr td:nth-child(1){
+    color: #006fbf;
+}
+
 .table tr td:hover{
-    opacity: 0.8;
     cursor: pointer;
-    background-color: #f7ecec;
     color: #602686;
+    background-color: #e6e8ec;
 }

@@ -4,6 +4,7 @@ import Menu from "../components/Menu"
 import Libro from "./Libro";
 import { useLocation } from "react-router-dom";
 import { PrestamoBoton } from "./PrestamoButton";
+import './css/prestar.css'
 
 export default function Prestar(props) {
 
@@ -56,21 +57,22 @@ export default function Prestar(props) {
         <div>
             <Menu />
             {/* <h3>Bienvenido de nuevo {location.state.username}{location.state.idLSector}!</h3> */}
-            <h3>Prestamos</h3>
-            <Form onSubmit={handleSubmit}>
-                <FormGroup className="mb-3" controlId="formBasicEmail">
-                    <FormLabel>Ingresa el ID del libro que deseas prestar</FormLabel>
-                    <FormControl name="titulo" onChange={handleChange} placeholder="Nombre Libro" />
-                </FormGroup>
-                <FormGroup>
-                    <Button variant="primary" type="submit">
-                        Buscar
-                    </Button>
-                </FormGroup>
-            </Form>
-            <Libro book={book} />
-            {lendButton()}
-
+            {/* <h3>Prestamos</h3> */}
+            <div class="cont-page">
+                <Form onSubmit={handleSubmit}>
+                    <FormGroup className="mb-3" controlId="formBasicEmail">
+                        <FormLabel>Ingresa el ID del libro que deseas prestar</FormLabel>
+                        <FormControl name="titulo" onChange={handleChange} placeholder="Nombre Libro" />
+                    </FormGroup>
+                    <FormGroup>
+                        <Button variant="primary" type="submit">
+                            Buscar
+                        </Button>
+                    </FormGroup>
+                </Form>
+                <Libro book={book} />
+                {lendButton()}
+            </div>
         </div>
     )
 }

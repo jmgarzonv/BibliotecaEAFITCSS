@@ -5,7 +5,7 @@ export default function Inicio(){
     return(
         <div>  
             <Menu/>
-            <h2>inicio Principal Manolo Was Here</h2>
+            <h2>inicio Principal</h2>
         </div>
     )
 }
