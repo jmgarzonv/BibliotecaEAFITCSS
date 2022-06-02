@@ -23,13 +23,13 @@ export default function Inicio(){
   
   <ul class="menu">
     <li>
-      <a href="#slide1">〇</a>
+      <a href="#slide1"></a>
     </li>
     <li>
-      <a href="#slide2">〇</a>
+      <a href="#slide2"></a>
     </li>
      <li>
-      <a href="#slide3">〇</a>
+      <a href="#slide3"></a>
     </li>
   </ul>
 
